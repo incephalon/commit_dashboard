@@ -1,0 +1,176 @@
+c:\users\robert\documents\visual studio 2013\Projects\slim\slim\bin\ApplicationInsights.config
+c:\users\robert\documents\visual studio 2013\Projects\slim\slim\bin\slim.dll.config
+c:\users\robert\documents\visual studio 2013\Projects\slim\slim\bin\slim.dll
+c:\users\robert\documents\visual studio 2013\Projects\slim\slim\bin\slim.pdb
+c:\users\robert\documents\visual studio 2013\Projects\slim\slim\bin\Microsoft.ApplicationInsights.dll
+c:\users\robert\documents\visual studio 2013\Projects\slim\slim\bin\Microsoft.ApplicationInsights.Extensibility.RuntimeTelemetry.dll
+c:\users\robert\documents\visual studio 2013\Projects\slim\slim\bin\Microsoft.ApplicationInsights.Extensibility.Web.dll
+c:\users\robert\documents\visual studio 2013\Projects\slim\slim\bin\Microsoft.Diagnostics.Tracing.EventSource.dll
+c:\users\robert\documents\visual studio 2013\Projects\slim\slim\bin\Microsoft.Threading.Tasks.dll
+c:\users\robert\documents\visual studio 2013\Projects\slim\slim\bin\Microsoft.Threading.Tasks.Extensions.Desktop.dll
+c:\users\robert\documents\visual studio 2013\Projects\slim\slim\bin\Microsoft.Threading.Tasks.Extensions.dll
+c:\users\robert\documents\visual studio 2013\Projects\slim\slim\bin\Newtonsoft.Json.dll
+c:\users\robert\documents\visual studio 2013\Projects\slim\slim\bin\System.Net.Http.Formatting.dll
+c:\users\robert\documents\visual studio 2013\Projects\slim\slim\bin\System.Web.Helpers.dll
+c:\users\robert\documents\visual studio 2013\Projects\slim\slim\bin\System.Web.Http.dll
+c:\users\robert\documents\visual studio 2013\Projects\slim\slim\bin\System.Web.Http.WebHost.dll
+c:\users\robert\documents\visual studio 2013\Projects\slim\slim\bin\System.Web.Mvc.dll
+c:\users\robert\documents\visual studio 2013\Projects\slim\slim\bin\System.Web.Razor.dll
+c:\users\robert\documents\visual studio 2013\Projects\slim\slim\bin\System.Web.Webpages.Deployment.dll
+c:\users\robert\documents\visual studio 2013\Projects\slim\slim\bin\System.Web.Webpages.dll
+c:\users\robert\documents\visual studio 2013\Projects\slim\slim\bin\System.Web.Webpages.Razor.dll
+c:\users\robert\documents\visual studio 2013\Projects\slim\slim\bin\Microsoft.ApplicationInsights.xml
+c:\users\robert\documents\visual studio 2013\Projects\slim\slim\bin\Microsoft.ApplicationInsights.Extensibility.RuntimeTelemetry.pdb
+c:\users\robert\documents\visual studio 2013\Projects\slim\slim\bin\Microsoft.ApplicationInsights.Extensibility.RuntimeTelemetry.xml
+c:\users\robert\documents\visual studio 2013\Projects\slim\slim\bin\Microsoft.ApplicationInsights.Extensibility.Web.pdb
+c:\users\robert\documents\visual studio 2013\Projects\slim\slim\bin\Microsoft.ApplicationInsights.Extensibility.Web.xml
+c:\users\robert\documents\visual studio 2013\Projects\slim\slim\bin\Microsoft.Diagnostics.Tracing.EventSource.xml
+c:\users\robert\documents\visual studio 2013\Projects\slim\slim\bin\Microsoft.Threading.Tasks.xml
+c:\users\robert\documents\visual studio 2013\Projects\slim\slim\bin\Microsoft.Threading.Tasks.Extensions.xml
+c:\users\robert\documents\visual studio 2013\Projects\slim\slim\bin\Microsoft.Threading.Tasks.Extensions.Desktop.xml
+c:\users\robert\documents\visual studio 2013\Projects\slim\slim\bin\Newtonsoft.Json.xml
+c:\users\robert\documents\visual studio 2013\Projects\slim\slim\bin\System.Net.Http.Formatting.xml
+c:\users\robert\documents\visual studio 2013\Projects\slim\slim\bin\System.Web.Http.xml
+c:\users\robert\documents\visual studio 2013\Projects\slim\slim\bin\System.Web.Http.WebHost.xml
+c:\users\robert\documents\visual studio 2013\Projects\slim\slim\bin\System.Web.Razor.xml
+c:\users\robert\documents\visual studio 2013\Projects\slim\slim\bin\System.Web.Webpages.xml
+c:\users\robert\documents\visual studio 2013\Projects\slim\slim\bin\System.Web.Webpages.Deployment.xml
+c:\users\robert\documents\visual studio 2013\Projects\slim\slim\bin\System.Web.Webpages.Razor.xml
+c:\users\robert\documents\visual studio 2013\Projects\slim\slim\bin\System.Web.Helpers.xml
+c:\users\robert\documents\visual studio 2013\Projects\slim\slim\bin\System.Web.Mvc.xml
+c:\users\robert\documents\visual studio 2013\Projects\slim\slim\obj\Debug\slim.csprojResolveAssemblyReference.cache
+c:\users\robert\documents\visual studio 2013\Projects\slim\slim\obj\Debug\ApplicationInsights.config
+c:\users\robert\documents\visual studio 2013\Projects\slim\slim\obj\Debug\slim.dll
+c:\users\robert\documents\visual studio 2013\Projects\slim\slim\obj\Debug\slim.pdb
+S:\RND\PROJECTS\trunk\slim\slim\bin\ApplicationInsights.config
+S:\RND\PROJECTS\trunk\slim\slim\bin\slim.dll.config
+S:\RND\PROJECTS\trunk\slim\slim\bin\slim.dll
+S:\RND\PROJECTS\trunk\slim\slim\bin\slim.pdb
+S:\RND\PROJECTS\trunk\slim\slim\bin\Microsoft.ApplicationInsights.dll
+S:\RND\PROJECTS\trunk\slim\slim\bin\Microsoft.ApplicationInsights.Extensibility.RuntimeTelemetry.dll
+S:\RND\PROJECTS\trunk\slim\slim\bin\Microsoft.ApplicationInsights.Extensibility.Web.dll
+S:\RND\PROJECTS\trunk\slim\slim\bin\Microsoft.Diagnostics.Tracing.EventSource.dll
+S:\RND\PROJECTS\trunk\slim\slim\bin\Microsoft.Threading.Tasks.dll
+S:\RND\PROJECTS\trunk\slim\slim\bin\Microsoft.Threading.Tasks.Extensions.Desktop.dll
+S:\RND\PROJECTS\trunk\slim\slim\bin\Microsoft.Threading.Tasks.Extensions.dll
+S:\RND\PROJECTS\trunk\slim\slim\bin\Newtonsoft.Json.dll
+S:\RND\PROJECTS\trunk\slim\slim\bin\System.Net.Http.Formatting.dll
+S:\RND\PROJECTS\trunk\slim\slim\bin\System.Web.Helpers.dll
+S:\RND\PROJECTS\trunk\slim\slim\bin\System.Web.Http.dll
+S:\RND\PROJECTS\trunk\slim\slim\bin\System.Web.Http.WebHost.dll
+S:\RND\PROJECTS\trunk\slim\slim\bin\System.Web.Mvc.dll
+S:\RND\PROJECTS\trunk\slim\slim\bin\System.Web.Razor.dll
+S:\RND\PROJECTS\trunk\slim\slim\bin\System.Web.Webpages.Deployment.dll
+S:\RND\PROJECTS\trunk\slim\slim\bin\System.Web.Webpages.dll
+S:\RND\PROJECTS\trunk\slim\slim\bin\System.Web.Webpages.Razor.dll
+S:\RND\PROJECTS\trunk\slim\slim\bin\Microsoft.ApplicationInsights.xml
+S:\RND\PROJECTS\trunk\slim\slim\bin\Microsoft.ApplicationInsights.Extensibility.RuntimeTelemetry.pdb
+S:\RND\PROJECTS\trunk\slim\slim\bin\Microsoft.ApplicationInsights.Extensibility.RuntimeTelemetry.xml
+S:\RND\PROJECTS\trunk\slim\slim\bin\Microsoft.ApplicationInsights.Extensibility.Web.pdb
+S:\RND\PROJECTS\trunk\slim\slim\bin\Microsoft.ApplicationInsights.Extensibility.Web.xml
+S:\RND\PROJECTS\trunk\slim\slim\bin\Microsoft.Diagnostics.Tracing.EventSource.xml
+S:\RND\PROJECTS\trunk\slim\slim\bin\Microsoft.Threading.Tasks.xml
+S:\RND\PROJECTS\trunk\slim\slim\bin\Microsoft.Threading.Tasks.Extensions.xml
+S:\RND\PROJECTS\trunk\slim\slim\bin\Microsoft.Threading.Tasks.Extensions.Desktop.xml
+S:\RND\PROJECTS\trunk\slim\slim\bin\Newtonsoft.Json.xml
+S:\RND\PROJECTS\trunk\slim\slim\bin\System.Net.Http.Formatting.xml
+S:\RND\PROJECTS\trunk\slim\slim\bin\System.Web.Http.xml
+S:\RND\PROJECTS\trunk\slim\slim\bin\System.Web.Http.WebHost.xml
+S:\RND\PROJECTS\trunk\slim\slim\bin\System.Web.Razor.xml
+S:\RND\PROJECTS\trunk\slim\slim\bin\System.Web.Webpages.xml
+S:\RND\PROJECTS\trunk\slim\slim\bin\System.Web.Webpages.Deployment.xml
+S:\RND\PROJECTS\trunk\slim\slim\bin\System.Web.Webpages.Razor.xml
+S:\RND\PROJECTS\trunk\slim\slim\bin\System.Web.Helpers.xml
+S:\RND\PROJECTS\trunk\slim\slim\bin\System.Web.Mvc.xml
+S:\RND\PROJECTS\trunk\slim\slim\obj\Debug\slim.csprojResolveAssemblyReference.cache
+S:\RND\PROJECTS\trunk\slim\slim\obj\Debug\ApplicationInsights.config
+S:\RND\PROJECTS\trunk\slim\slim\obj\Debug\slim.dll
+S:\RND\PROJECTS\trunk\slim\slim\obj\Debug\slim.pdb
+C:\Users\robert\Downloads\slim_template\slim\slim\bin\ApplicationInsights.config
+C:\Users\robert\Downloads\slim_template\slim\slim\bin\slim.dll.config
+C:\Users\robert\Downloads\slim_template\slim\slim\bin\slim.dll
+C:\Users\robert\Downloads\slim_template\slim\slim\bin\slim.pdb
+C:\Users\robert\Downloads\slim_template\slim\slim\bin\Microsoft.ApplicationInsights.dll
+C:\Users\robert\Downloads\slim_template\slim\slim\bin\Microsoft.ApplicationInsights.Extensibility.RuntimeTelemetry.dll
+C:\Users\robert\Downloads\slim_template\slim\slim\bin\Microsoft.ApplicationInsights.Extensibility.Web.dll
+C:\Users\robert\Downloads\slim_template\slim\slim\bin\Microsoft.Diagnostics.Tracing.EventSource.dll
+C:\Users\robert\Downloads\slim_template\slim\slim\bin\Microsoft.Threading.Tasks.dll
+C:\Users\robert\Downloads\slim_template\slim\slim\bin\Microsoft.Threading.Tasks.Extensions.Desktop.dll
+C:\Users\robert\Downloads\slim_template\slim\slim\bin\Microsoft.Threading.Tasks.Extensions.dll
+C:\Users\robert\Downloads\slim_template\slim\slim\bin\Newtonsoft.Json.dll
+C:\Users\robert\Downloads\slim_template\slim\slim\bin\System.Net.Http.Formatting.dll
+C:\Users\robert\Downloads\slim_template\slim\slim\bin\System.Web.Helpers.dll
+C:\Users\robert\Downloads\slim_template\slim\slim\bin\System.Web.Http.dll
+C:\Users\robert\Downloads\slim_template\slim\slim\bin\System.Web.Http.WebHost.dll
+C:\Users\robert\Downloads\slim_template\slim\slim\bin\System.Web.Mvc.dll
+C:\Users\robert\Downloads\slim_template\slim\slim\bin\System.Web.Razor.dll
+C:\Users\robert\Downloads\slim_template\slim\slim\bin\System.Web.Webpages.Deployment.dll
+C:\Users\robert\Downloads\slim_template\slim\slim\bin\System.Web.Webpages.dll
+C:\Users\robert\Downloads\slim_template\slim\slim\bin\System.Web.Webpages.Razor.dll
+C:\Users\robert\Downloads\slim_template\slim\slim\bin\Microsoft.ApplicationInsights.xml
+C:\Users\robert\Downloads\slim_template\slim\slim\bin\Microsoft.ApplicationInsights.Extensibility.RuntimeTelemetry.pdb
+C:\Users\robert\Downloads\slim_template\slim\slim\bin\Microsoft.ApplicationInsights.Extensibility.RuntimeTelemetry.xml
+C:\Users\robert\Downloads\slim_template\slim\slim\bin\Microsoft.ApplicationInsights.Extensibility.Web.pdb
+C:\Users\robert\Downloads\slim_template\slim\slim\bin\Microsoft.ApplicationInsights.Extensibility.Web.xml
+C:\Users\robert\Downloads\slim_template\slim\slim\bin\Microsoft.Diagnostics.Tracing.EventSource.xml
+C:\Users\robert\Downloads\slim_template\slim\slim\bin\Microsoft.Threading.Tasks.xml
+C:\Users\robert\Downloads\slim_template\slim\slim\bin\Microsoft.Threading.Tasks.Extensions.xml
+C:\Users\robert\Downloads\slim_template\slim\slim\bin\Microsoft.Threading.Tasks.Extensions.Desktop.xml
+C:\Users\robert\Downloads\slim_template\slim\slim\bin\Newtonsoft.Json.xml
+C:\Users\robert\Downloads\slim_template\slim\slim\bin\System.Net.Http.Formatting.xml
+C:\Users\robert\Downloads\slim_template\slim\slim\bin\System.Web.Http.xml
+C:\Users\robert\Downloads\slim_template\slim\slim\bin\System.Web.Http.WebHost.xml
+C:\Users\robert\Downloads\slim_template\slim\slim\bin\System.Web.Razor.xml
+C:\Users\robert\Downloads\slim_template\slim\slim\bin\System.Web.Webpages.xml
+C:\Users\robert\Downloads\slim_template\slim\slim\bin\System.Web.Webpages.Deployment.xml
+C:\Users\robert\Downloads\slim_template\slim\slim\bin\System.Web.Webpages.Razor.xml
+C:\Users\robert\Downloads\slim_template\slim\slim\bin\System.Web.Helpers.xml
+C:\Users\robert\Downloads\slim_template\slim\slim\bin\System.Web.Mvc.xml
+C:\Users\robert\Downloads\slim_template\slim\slim\obj\Debug\slim.csprojResolveAssemblyReference.cache
+C:\Users\robert\Downloads\slim_template\slim\slim\obj\Debug\ApplicationInsights.config
+C:\Users\robert\Downloads\slim_template\slim\slim\obj\Debug\slim.dll
+C:\Users\robert\Downloads\slim_template\slim\slim\obj\Debug\slim.pdb
+D:\Dropbox\commit\dashboard\site\slim\slim\bin\ApplicationInsights.config
+D:\Dropbox\commit\dashboard\site\slim\slim\bin\slim.dll.config
+D:\Dropbox\commit\dashboard\site\slim\slim\bin\slim.dll
+D:\Dropbox\commit\dashboard\site\slim\slim\bin\slim.pdb
+D:\Dropbox\commit\dashboard\site\slim\slim\bin\Microsoft.ApplicationInsights.dll
+D:\Dropbox\commit\dashboard\site\slim\slim\bin\Microsoft.ApplicationInsights.Extensibility.RuntimeTelemetry.dll
+D:\Dropbox\commit\dashboard\site\slim\slim\bin\Microsoft.ApplicationInsights.Extensibility.Web.dll
+D:\Dropbox\commit\dashboard\site\slim\slim\bin\Microsoft.Diagnostics.Tracing.EventSource.dll
+D:\Dropbox\commit\dashboard\site\slim\slim\bin\Microsoft.Threading.Tasks.dll
+D:\Dropbox\commit\dashboard\site\slim\slim\bin\Microsoft.Threading.Tasks.Extensions.Desktop.dll
+D:\Dropbox\commit\dashboard\site\slim\slim\bin\Microsoft.Threading.Tasks.Extensions.dll
+D:\Dropbox\commit\dashboard\site\slim\slim\bin\Newtonsoft.Json.dll
+D:\Dropbox\commit\dashboard\site\slim\slim\bin\System.Net.Http.Formatting.dll
+D:\Dropbox\commit\dashboard\site\slim\slim\bin\System.Web.Helpers.dll
+D:\Dropbox\commit\dashboard\site\slim\slim\bin\System.Web.Http.dll
+D:\Dropbox\commit\dashboard\site\slim\slim\bin\System.Web.Http.WebHost.dll
+D:\Dropbox\commit\dashboard\site\slim\slim\bin\System.Web.Mvc.dll
+D:\Dropbox\commit\dashboard\site\slim\slim\bin\System.Web.Razor.dll
+D:\Dropbox\commit\dashboard\site\slim\slim\bin\System.Web.Webpages.Deployment.dll
+D:\Dropbox\commit\dashboard\site\slim\slim\bin\System.Web.Webpages.dll
+D:\Dropbox\commit\dashboard\site\slim\slim\bin\System.Web.Webpages.Razor.dll
+D:\Dropbox\commit\dashboard\site\slim\slim\bin\Microsoft.ApplicationInsights.xml
+D:\Dropbox\commit\dashboard\site\slim\slim\bin\Microsoft.ApplicationInsights.Extensibility.RuntimeTelemetry.pdb
+D:\Dropbox\commit\dashboard\site\slim\slim\bin\Microsoft.ApplicationInsights.Extensibility.RuntimeTelemetry.xml
+D:\Dropbox\commit\dashboard\site\slim\slim\bin\Microsoft.ApplicationInsights.Extensibility.Web.pdb
+D:\Dropbox\commit\dashboard\site\slim\slim\bin\Microsoft.ApplicationInsights.Extensibility.Web.xml
+D:\Dropbox\commit\dashboard\site\slim\slim\bin\Microsoft.Diagnostics.Tracing.EventSource.xml
+D:\Dropbox\commit\dashboard\site\slim\slim\bin\Microsoft.Threading.Tasks.xml
+D:\Dropbox\commit\dashboard\site\slim\slim\bin\Microsoft.Threading.Tasks.Extensions.xml
+D:\Dropbox\commit\dashboard\site\slim\slim\bin\Microsoft.Threading.Tasks.Extensions.Desktop.xml
+D:\Dropbox\commit\dashboard\site\slim\slim\bin\Newtonsoft.Json.xml
+D:\Dropbox\commit\dashboard\site\slim\slim\bin\System.Net.Http.Formatting.xml
+D:\Dropbox\commit\dashboard\site\slim\slim\bin\System.Web.Http.xml
+D:\Dropbox\commit\dashboard\site\slim\slim\bin\System.Web.Http.WebHost.xml
+D:\Dropbox\commit\dashboard\site\slim\slim\bin\System.Web.Razor.xml
+D:\Dropbox\commit\dashboard\site\slim\slim\bin\System.Web.Webpages.xml
+D:\Dropbox\commit\dashboard\site\slim\slim\bin\System.Web.Webpages.Deployment.xml
+D:\Dropbox\commit\dashboard\site\slim\slim\bin\System.Web.Webpages.Razor.xml
+D:\Dropbox\commit\dashboard\site\slim\slim\bin\System.Web.Helpers.xml
+D:\Dropbox\commit\dashboard\site\slim\slim\bin\System.Web.Mvc.xml
+D:\Dropbox\commit\dashboard\site\slim\slim\obj\Debug\slim.csprojResolveAssemblyReference.cache
+D:\Dropbox\commit\dashboard\site\slim\slim\obj\Debug\ApplicationInsights.config
+D:\Dropbox\commit\dashboard\site\slim\slim\obj\Debug\slim.dll
+D:\Dropbox\commit\dashboard\site\slim\slim\obj\Debug\slim.pdb
