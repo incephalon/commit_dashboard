@@ -1,0 +1,247 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="SingletonModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012.Azure" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="singleton">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="CAMPUS" Type="varchar" MaxLength="50" />
+          <Property Name="CAMPNAME" Type="varchar" MaxLength="50" />
+          <Property Name="CFLALTED" Type="varchar" MaxLength="50" />
+          <Property Name="CFLCHART" Type="varchar" MaxLength="50" />
+          <Property Name="CNTYNAME" Type="varchar" MaxLength="50" />
+          <Property Name="COUNTY" Type="varchar" MaxLength="50" />
+          <Property Name="DISTNAME" Type="varchar" MaxLength="50" />
+          <Property Name="DISTRICT" Type="varchar" MaxLength="50" />
+          <Property Name="GRDSPAN" Type="varchar" MaxLength="50" />
+          <Property Name="GRDTYPE" Type="varchar" MaxLength="50" />
+          <Property Name="LAT" Type="varchar" MaxLength="50" />
+          <Property Name="LNG" Type="varchar" MaxLength="50" />
+          <Property Name="CA00A001213R" Type="varchar" MaxLength="50" />
+          <Property Name="CB00A001213R" Type="varchar" MaxLength="50" />
+          <Property Name="CH00A001213R" Type="varchar" MaxLength="50" />
+          <Property Name="CW00A001213R" Type="varchar" MaxLength="50" />
+          <Property Name="YEAR" Type="varchar" MaxLength="50" />
+          <Property Name="CPEMALLP" Type="varchar" MaxLength="50" />
+          <Property Name="CPETALLC" Type="varchar" MaxLength="50" />
+          <Property Name="CPETBLAP" Type="varchar" MaxLength="50" />
+          <Property Name="CPETECOP" Type="varchar" MaxLength="50" />
+          <Property Name="CPETG01C" Type="varchar" MaxLength="50" />
+          <Property Name="CPETG01P" Type="varchar" MaxLength="50" />
+          <Property Name="CPETG02C" Type="varchar" MaxLength="50" />
+          <Property Name="CPETG02P" Type="varchar" MaxLength="50" />
+          <Property Name="CPETG03C" Type="varchar" MaxLength="50" />
+          <Property Name="CPETG03P" Type="varchar" MaxLength="50" />
+          <Property Name="CPETG04C" Type="varchar" MaxLength="50" />
+          <Property Name="CPETG04P" Type="varchar" MaxLength="50" />
+          <Property Name="CPETG05C" Type="varchar" MaxLength="50" />
+          <Property Name="CPETG05P" Type="varchar" MaxLength="50" />
+          <Property Name="CPETG06C" Type="varchar" MaxLength="50" />
+          <Property Name="CPETG06P" Type="varchar" MaxLength="50" />
+          <Property Name="CPETG07C" Type="varchar" MaxLength="50" />
+          <Property Name="CPETG07P" Type="varchar" MaxLength="50" />
+          <Property Name="CPETG08C" Type="varchar" MaxLength="50" />
+          <Property Name="CPETG08P" Type="varchar" MaxLength="50" />
+          <Property Name="CPETG09C" Type="varchar" MaxLength="50" />
+          <Property Name="CPETG09P" Type="varchar" MaxLength="50" />
+          <Property Name="CPETG10C" Type="varchar" MaxLength="50" />
+          <Property Name="CPETG10P" Type="varchar" MaxLength="50" />
+          <Property Name="CPETG11C" Type="varchar" MaxLength="50" />
+          <Property Name="CPETG11P" Type="varchar" MaxLength="50" />
+          <Property Name="CPETG12C" Type="varchar" MaxLength="50" />
+          <Property Name="CPETG12P" Type="varchar" MaxLength="50" />
+          <Property Name="CPETGKNC" Type="varchar" MaxLength="50" />
+          <Property Name="CPETGKNP" Type="varchar" MaxLength="50" />
+          <Property Name="CPETGPKC" Type="varchar" MaxLength="50" />
+          <Property Name="CPETGPKP" Type="varchar" MaxLength="50" />
+          <Property Name="CPETHISC" Type="varchar" MaxLength="50" />
+          <Property Name="CPETHISP" Type="varchar" MaxLength="50" />
+          <Property Name="CPETLEPC" Type="varchar" MaxLength="50" />
+          <Property Name="CPETLEPP" Type="varchar" MaxLength="50" />
+          <Property Name="CPETWHIC" Type="varchar" MaxLength="50" />
+          <Property Name="CPETWHIP" Type="varchar" MaxLength="50" />
+          <Property Name="CPST00FP" Type="varchar" MaxLength="50" />
+          <Property Name="CPST01FP" Type="varchar" MaxLength="50" />
+          <Property Name="CPST06FP" Type="varchar" MaxLength="50" />
+          <Property Name="CPST11FP" Type="varchar" MaxLength="50" />
+          <Property Name="CPST20FP" Type="varchar" MaxLength="50" />
+        </EntityType>
+        <EntityContainer Name="SingletonModelStoreContainer">
+          <EntitySet Name="singleton" EntityType="Self.singleton" Schema="dbo" store:Type="Tables" />
+        </EntityContainer>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="SingletonModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="singleton">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="CAMPUS" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="CAMPNAME" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="CFLALTED" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="CFLCHART" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="CNTYNAME" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="COUNTY" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="DISTNAME" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="DISTRICT" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="GRDSPAN" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="GRDTYPE" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="LAT" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="LNG" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="CA00A001213R" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="CB00A001213R" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="CH00A001213R" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="CW00A001213R" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="YEAR" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="CPEMALLP" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="CPETALLC" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="CPETBLAP" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="CPETECOP" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="CPETG01C" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="CPETG01P" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="CPETG02C" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="CPETG02P" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="CPETG03C" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="CPETG03P" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="CPETG04C" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="CPETG04P" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="CPETG05C" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="CPETG05P" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="CPETG06C" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="CPETG06P" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="CPETG07C" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="CPETG07P" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="CPETG08C" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="CPETG08P" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="CPETG09C" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="CPETG09P" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="CPETG10C" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="CPETG10P" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="CPETG11C" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="CPETG11P" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="CPETG12C" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="CPETG12P" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="CPETGKNC" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="CPETGKNP" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="CPETGPKC" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="CPETGPKP" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="CPETHISC" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="CPETHISP" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="CPETLEPC" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="CPETLEPP" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="CPETWHIC" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="CPETWHIP" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="CPST00FP" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="CPST01FP" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="CPST06FP" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="CPST11FP" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="CPST20FP" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityContainer Name="SingletonEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="singleton" EntityType="Self.singleton" />
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="SingletonModelStoreContainer" CdmEntityContainer="SingletonEntities">
+          <EntitySetMapping Name="singleton">
+            <EntityTypeMapping TypeName="SingletonModel.singleton">
+              <MappingFragment StoreEntitySet="singleton">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="CAMPUS" ColumnName="CAMPUS" />
+                <ScalarProperty Name="CAMPNAME" ColumnName="CAMPNAME" />
+                <ScalarProperty Name="CFLALTED" ColumnName="CFLALTED" />
+                <ScalarProperty Name="CFLCHART" ColumnName="CFLCHART" />
+                <ScalarProperty Name="CNTYNAME" ColumnName="CNTYNAME" />
+                <ScalarProperty Name="COUNTY" ColumnName="COUNTY" />
+                <ScalarProperty Name="DISTNAME" ColumnName="DISTNAME" />
+                <ScalarProperty Name="DISTRICT" ColumnName="DISTRICT" />
+                <ScalarProperty Name="GRDSPAN" ColumnName="GRDSPAN" />
+                <ScalarProperty Name="GRDTYPE" ColumnName="GRDTYPE" />
+                <ScalarProperty Name="LAT" ColumnName="LAT" />
+                <ScalarProperty Name="LNG" ColumnName="LNG" />
+                <ScalarProperty Name="CA00A001213R" ColumnName="CA00A001213R" />
+                <ScalarProperty Name="CB00A001213R" ColumnName="CB00A001213R" />
+                <ScalarProperty Name="CH00A001213R" ColumnName="CH00A001213R" />
+                <ScalarProperty Name="CW00A001213R" ColumnName="CW00A001213R" />
+                <ScalarProperty Name="YEAR" ColumnName="YEAR" />
+                <ScalarProperty Name="CPEMALLP" ColumnName="CPEMALLP" />
+                <ScalarProperty Name="CPETALLC" ColumnName="CPETALLC" />
+                <ScalarProperty Name="CPETBLAP" ColumnName="CPETBLAP" />
+                <ScalarProperty Name="CPETECOP" ColumnName="CPETECOP" />
+                <ScalarProperty Name="CPETG01C" ColumnName="CPETG01C" />
+                <ScalarProperty Name="CPETG01P" ColumnName="CPETG01P" />
+                <ScalarProperty Name="CPETG02C" ColumnName="CPETG02C" />
+                <ScalarProperty Name="CPETG02P" ColumnName="CPETG02P" />
+                <ScalarProperty Name="CPETG03C" ColumnName="CPETG03C" />
+                <ScalarProperty Name="CPETG03P" ColumnName="CPETG03P" />
+                <ScalarProperty Name="CPETG04C" ColumnName="CPETG04C" />
+                <ScalarProperty Name="CPETG04P" ColumnName="CPETG04P" />
+                <ScalarProperty Name="CPETG05C" ColumnName="CPETG05C" />
+                <ScalarProperty Name="CPETG05P" ColumnName="CPETG05P" />
+                <ScalarProperty Name="CPETG06C" ColumnName="CPETG06C" />
+                <ScalarProperty Name="CPETG06P" ColumnName="CPETG06P" />
+                <ScalarProperty Name="CPETG07C" ColumnName="CPETG07C" />
+                <ScalarProperty Name="CPETG07P" ColumnName="CPETG07P" />
+                <ScalarProperty Name="CPETG08C" ColumnName="CPETG08C" />
+                <ScalarProperty Name="CPETG08P" ColumnName="CPETG08P" />
+                <ScalarProperty Name="CPETG09C" ColumnName="CPETG09C" />
+                <ScalarProperty Name="CPETG09P" ColumnName="CPETG09P" />
+                <ScalarProperty Name="CPETG10C" ColumnName="CPETG10C" />
+                <ScalarProperty Name="CPETG10P" ColumnName="CPETG10P" />
+                <ScalarProperty Name="CPETG11C" ColumnName="CPETG11C" />
+                <ScalarProperty Name="CPETG11P" ColumnName="CPETG11P" />
+                <ScalarProperty Name="CPETG12C" ColumnName="CPETG12C" />
+                <ScalarProperty Name="CPETG12P" ColumnName="CPETG12P" />
+                <ScalarProperty Name="CPETGKNC" ColumnName="CPETGKNC" />
+                <ScalarProperty Name="CPETGKNP" ColumnName="CPETGKNP" />
+                <ScalarProperty Name="CPETGPKC" ColumnName="CPETGPKC" />
+                <ScalarProperty Name="CPETGPKP" ColumnName="CPETGPKP" />
+                <ScalarProperty Name="CPETHISC" ColumnName="CPETHISC" />
+                <ScalarProperty Name="CPETHISP" ColumnName="CPETHISP" />
+                <ScalarProperty Name="CPETLEPC" ColumnName="CPETLEPC" />
+                <ScalarProperty Name="CPETLEPP" ColumnName="CPETLEPP" />
+                <ScalarProperty Name="CPETWHIC" ColumnName="CPETWHIC" />
+                <ScalarProperty Name="CPETWHIP" ColumnName="CPETWHIP" />
+                <ScalarProperty Name="CPST00FP" ColumnName="CPST00FP" />
+                <ScalarProperty Name="CPST01FP" ColumnName="CPST01FP" />
+                <ScalarProperty Name="CPST06FP" ColumnName="CPST06FP" />
+                <ScalarProperty Name="CPST11FP" ColumnName="CPST11FP" />
+                <ScalarProperty Name="CPST20FP" ColumnName="CPST20FP" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="false" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>
