@@ -12,7 +12,7 @@ namespace DataReport.Service.Services
             _repository = repository;
         }
 
-        public IResponseMessage GetDataByColumns(List<string> columns)
+        public IResponseMessage GetDataByColumns(string[] columns)
         {
             return _repository.GetDataByColumns(columns);
         }

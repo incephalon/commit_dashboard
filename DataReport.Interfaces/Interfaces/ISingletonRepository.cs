@@ -8,6 +8,6 @@ namespace DataReport.Interfaces.Interfaces
 {
     public interface ISingletonRepository
     {
-        IResponseMessage GetDataByColumns(List<string> columns);
+        IResponseMessage GetDataByColumns(string[] columns);
     }
 }

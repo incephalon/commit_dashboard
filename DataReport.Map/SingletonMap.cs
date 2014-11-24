@@ -19,7 +19,7 @@ namespace DataReport.Map
             _service = service;
         }
 
-        public IResponseMessage GetDataByColumns(List<string> columns)
+        public IResponseMessage GetDataByColumns(string[] columns)
         {
             IResponseMessage response = _service.GetDataByColumns(columns);
             return response;

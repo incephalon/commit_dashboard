@@ -23,7 +23,7 @@ namespace DataReport.Repository
 
         }
 
-        public IResponseMessage GetDataByColumns(List<string> columns)
+        public IResponseMessage GetDataByColumns(string[] columns)
         {
             IResponseMessage response = new ResponseMessage();
             try

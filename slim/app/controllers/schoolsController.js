@@ -27,8 +27,9 @@
         styles: styler
     };
 
-    allData.getData()
-       .success(function (data) {
+    allData.getNewData()
+       .success(function (response) {
+           var data = response.ResponseData;
            $scope.schools = data;
            //$scope.schools = _.pluck(data, 'Id');
           // console.log($scope.schools);
@@ -47,7 +48,9 @@
 
            $scope.selectedSchoolData = [
              {
-                 'CPETBLAP': parseFloat($scope.selectedSchool["CPETBLAP"]), 'CPETHISP': parseFloat($scope.selectedSchool["CPETHISP"]), 'CPETWHIP': parseFloat($scope.selectedSchool["CPETWHIP"]),
+                 'CPETBLAP': parseFloat($scope.selectedSchool["CPETBLAP"]),
+                 'CPETHISP': parseFloat($scope.selectedSchool["CPETHISP"]),
+                 'cpetwhip': parseFloat($scope.selectedSchool["CPETWHIP"]),
                  'CPETECOP': parseFloat($scope.selectedSchool["CPETECOP"]),
                  'CPETLEPP': parseFloat($scope.selectedSchool["CPETLEPP"])
              }
@@ -84,9 +87,11 @@
 
         $scope.selectedSchoolData = [
          {
-             'CPETBLAP': parseFloat($scope.selectedSchool["CPETBLAP"]), 'CPETHISP': parseFloat($scope.selectedSchool["CPETHISP"]), 'CPETWHIP': parseFloat($scope.selectedSchool["CPETWHIP"]),
-          'CPETECOP': parseFloat($scope.selectedSchool["CPETECOP"]),
-          'CPETLEPP': parseFloat($scope.selectedSchool["CPETLEPP"])
+             'CPETBLAP': parseFloat($scope.selectedSchool["CPETBLAP".toLowerCase()]),
+             'CPETHISP': parseFloat($scope.selectedSchool["CPETHISP".toLowerCase()]),
+             'CPETWHIP': parseFloat($scope.selectedSchool["CPETWHIP".toLowerCase()]),
+             'CPETECOP': parseFloat($scope.selectedSchool["CPETECOP".toLowerCase()]),
+             'CPETLEPP': parseFloat($scope.selectedSchool["CPETLEPP".toLowerCase()])
          }
         ];
 
@@ -146,7 +151,21 @@ angular.module('myApp').factory('allData', function ($http) {
     return {
         getData: function () {
             return $http.get("/api/sql");
+        },
+        getNewData: function () {                     
+            var listOfColumns = ["Id", "CAMPUS", "CAMPNAME", "YEAR", "CPEMALLP", "CPETALLC", "CPETECOP", "CPETLEPP", "CPETBLAP", "CPETHISP", "CPETWHIP"];
+            var request = {
+                method: "POST",
+                url:  "http://localhost:3436/api/Singleton",
+                headers: { 'Content-Type': 'application/json' },
+                data: { columns: listOfColumns }
+                
+            };
+            var errors = [];
+            return $http.post(request.url, request.data, { headers: { 'Content-Type': 'application/json' } });
+            
         }
+
     };
 
 });
@@ -203,6 +222,7 @@ angular.module('myApp').factory('allData', function ($http) {
 //        }
 //    })
 //}
+
 
 
 //$scope.FruitAutoCompleteFromFactory = {

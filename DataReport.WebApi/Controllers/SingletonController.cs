@@ -20,21 +20,42 @@ namespace DataReport.WebApi.Controllers
 
 
         // GET: Singleton
+        
         [ResponseType(typeof(singleton))]
-        public IHttpActionResult Get()
+        public IHttpActionResult Get(string column)
         {
             try
             {
-                var response = _singletonMap.GetDataByColumns(new List<string> { "Id", "YEAR" });
+                var response = _singletonMap.GetDataByColumns(new string[]{"Id"});
                 return Ok(response);
             }
             catch (Exception)
             {
-
                 return null;
             }
-
-
         }
+        [System.Web.Http.AcceptVerbs("GET", "POST")]
+        public IHttpActionResult Post(MyViewModel columns)
+        {
+            if (!ModelState.IsValid)
+            {
+                return BadRequest(ModelState);
+            }
+            try
+            {
+                var response = _singletonMap.GetDataByColumns(columns.Columns);
+                return Ok(response);
+            }
+            catch (Exception ex)
+            {
+                throw new HttpResponseException(HttpStatusCode.BadRequest);
+
+            }            
+        }
+    }
+
+    public class MyViewModel
+    {
+        public string[] Columns { get; set; }
     }
 }
