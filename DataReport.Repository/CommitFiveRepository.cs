@@ -1,23 +1,19 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Data.Entity;
-using System.Data.Entity.Core.Objects.DataClasses;
 using System.Linq;
+using System.Linq.Dynamic;
 using System.Net;
 using System.Text;
 using System.Threading.Tasks;
 using DataReport.Common;
 using DataReport.Interfaces.Interfaces;
 using DataReport.Model;
-using System.Linq.Dynamic;
-using System.Data.Linq;
 
 namespace DataReport.Repository
 {
-    public class SingletonRepository : BaseSingletonRepository, ISingletonRepository
+    public class CommitFiveRepository : BaseCommitFiveRepository, ICommitFiveRepository
     {
-
-        public SingletonRepository(IReportContext context)
+        public CommitFiveRepository(ICommitFiveContext context)
             : base(context)
         {
 
@@ -28,8 +24,8 @@ namespace DataReport.Repository
             IResponseMessage response = new ResponseMessage();
             try
             {
-                //var data = Context.Singletons.Select("new ({0})", string.Join(",", columns));
-                var data = Context.Singletons.Select(string.Format("new ({0})", string.Join(", ", columns)));
+                
+                var data = Context.College.Select(string.Format("new ({0})", string.Join(", ", columns))).Take(100);
                 response.ResponseData = data;
                 response.IsValid = true;
                 response.StatusCode = HttpStatusCode.OK;
@@ -44,6 +40,5 @@ namespace DataReport.Repository
 
             return response;
         }
-
     }
 }

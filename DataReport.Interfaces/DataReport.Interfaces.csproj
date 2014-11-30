@@ -39,6 +39,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Interfaces\ICommitFiveMap.cs" />
+    <Compile Include="Interfaces\ICommitFiveRepository.cs" />
+    <Compile Include="Interfaces\ICommitFiveService.cs" />
     <Compile Include="Interfaces\IResponseMessage.cs" />
     <Compile Include="Interfaces\ISingletonRepository.cs" />
     <Compile Include="Interfaces\ISingletonMap.cs" />

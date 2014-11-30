@@ -41,20 +41,24 @@ namespace DataReport.Injector
             container = new UnityContainer();
 
             container.RegisterType<IReportContext, SingletonEntities>();
+            container.RegisterType<ICommitFiveContext, CommitFiveEntities>();
 
             #region Maps
             
             container.RegisterType<ISingletonMap, SingletonMap>();
+            container.RegisterType<ICommitFiveMap, CommitFiveMap>();
 
             #endregion
 
             #region Services
             container.RegisterType<ISingletonService, SingletonService>();
+            container.RegisterType<ICommitFiveService, CommitFiveService>();
             
             #endregion
 
             #region Repositories
             container.RegisterType<ISingletonRepository, SingletonRepository>();
+            container.RegisterType<ICommitFiveRepository, CommitFiveRepository>();
             #endregion
 
             #region Commons

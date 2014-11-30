@@ -1,0 +1,539 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="commit_fiveModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012.Azure" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="campusReference">
+          <Key>
+            <PropertyRef Name="CampusId" />
+          </Key>
+          <Property Name="CampusId" Type="int" Nullable="false" />
+          <Property Name="CAMPUS" Type="varchar" MaxLength="50" />
+          <Property Name="CAMPNAME" Type="varchar" MaxLength="50" />
+          <Property Name="CNTYNAME" Type="varchar" MaxLength="50" />
+          <Property Name="COUNTY" Type="varchar" MaxLength="50" />
+          <Property Name="DISTNAME" Type="varchar" MaxLength="50" />
+          <Property Name="GRDSPAN" Type="varchar" MaxLength="50" />
+          <Property Name="GRDTYPE" Type="varchar" MaxLength="50" />
+        </EntityType>
+        <EntityType Name="college">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="CAMPUS" Type="varchar" MaxLength="50" />
+          <Property Name="CampusId" Type="int" Nullable="false" />
+          <Property Name="YEAR" Type="varchar" MaxLength="50" />
+          <Property Name="CB0CT" Type="varchar" MaxLength="50" />
+          <Property Name="CB0CC" Type="varchar" MaxLength="50" />
+          <Property Name="CB0CS" Type="varchar" MaxLength="50" />
+          <Property Name="CB0CA" Type="varchar" MaxLength="50" />
+          <Property Name="CA0CT" Type="varchar" MaxLength="50" />
+          <Property Name="CA0CC" Type="varchar" MaxLength="50" />
+          <Property Name="CA0CS" Type="varchar" MaxLength="50" />
+          <Property Name="CA0CA" Type="varchar" MaxLength="50" />
+          <Property Name="CH0CT" Type="varchar" MaxLength="50" />
+          <Property Name="CH0CC" Type="varchar" MaxLength="50" />
+          <Property Name="CH0CS" Type="varchar" MaxLength="50" />
+          <Property Name="CH0CA" Type="varchar" MaxLength="50" />
+          <Property Name="CW0CT" Type="varchar" MaxLength="50" />
+          <Property Name="CW0CC" Type="varchar" MaxLength="50" />
+          <Property Name="CW0CS" Type="varchar" MaxLength="50" />
+          <Property Name="CW0CA" Type="varchar" MaxLength="50" />
+          <Property Name="CM0CT" Type="varchar" MaxLength="50" />
+          <Property Name="CM0CC" Type="varchar" MaxLength="50" />
+          <Property Name="CM0CS" Type="varchar" MaxLength="50" />
+          <Property Name="CM0CA" Type="varchar" MaxLength="50" />
+          <Property Name="CF0CT" Type="varchar" MaxLength="50" />
+          <Property Name="CF0CC" Type="varchar" MaxLength="50" />
+          <Property Name="CF0CS" Type="varchar" MaxLength="50" />
+          <Property Name="CF0CA" Type="varchar" MaxLength="50" />
+          <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+        </EntityType>
+        <EntityType Name="mytable">
+          <Key>
+            <PropertyRef Name="CAMPUS" />
+          </Key>
+          <Property Name="CAMPUS" Type="varchar" MaxLength="10" Nullable="false" />
+          <Property Name="CAMPNAME" Type="varchar" MaxLength="34" />
+          <Property Name="CNTYNAME" Type="varchar" MaxLength="13" />
+          <Property Name="COUNTY" Type="varchar" MaxLength="4" />
+          <Property Name="DISTNAME" Type="varchar" MaxLength="34" />
+          <Property Name="GRDSPAN" Type="varchar" MaxLength="8" />
+          <Property Name="GRDTYPE" Type="varchar" MaxLength="1" />
+        </EntityType>
+        <EntityType Name="noner">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="CAMPUS" Type="varchar" MaxLength="50" />
+          <Property Name="CampusId" Type="int" Nullable="false" />
+          <Property Name="YEAR" Type="varchar" MaxLength="50" />
+          <Property Name="CB0AT" Type="varchar" MaxLength="50" />
+          <Property Name="CA0AT" Type="varchar" MaxLength="50" />
+          <Property Name="CW0AT" Type="varchar" MaxLength="50" />
+          <Property Name="CH0AT" Type="varchar" MaxLength="50" />
+          <Property Name="CE0AT" Type="varchar" MaxLength="50" />
+          <Property Name="CL0AT" Type="varchar" MaxLength="50" />
+          <Property Name="CM0AT" Type="varchar" MaxLength="50" />
+          <Property Name="CF0AT" Type="varchar" MaxLength="50" />
+          <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+        </EntityType>
+        <EntityType Name="staff">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="CAMPUS" Type="varchar" MaxLength="50" />
+          <Property Name="CampusId" Type="int" Nullable="false" />
+          <Property Name="YEAR" Type="varchar" MaxLength="50" />
+          <Property Name="CPST00FP" Type="varchar" MaxLength="50" />
+          <Property Name="CPST01FP" Type="varchar" MaxLength="50" />
+          <Property Name="CPST11FP" Type="varchar" MaxLength="50" />
+          <Property Name="CPST06FP" Type="varchar" MaxLength="50" />
+          <Property Name="CPST20FP" Type="varchar" MaxLength="50" />
+          <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+        </EntityType>
+        <EntityType Name="student">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="CAMPUS" Type="varchar" MaxLength="50" />
+          <Property Name="CampusId" Type="int" Nullable="false" />
+          <Property Name="YEAR" Type="varchar" MaxLength="50" />
+          <Property Name="CPETHISP" Type="varchar" MaxLength="50" />
+          <Property Name="CPETBLAP" Type="varchar" MaxLength="50" />
+          <Property Name="CPETWHIP" Type="varchar" MaxLength="50" />
+          <Property Name="CPETLEPP" Type="varchar" MaxLength="50" />
+          <Property Name="CPETECOP" Type="varchar" MaxLength="50" />
+          <Property Name="CPETALLC" Type="varchar" MaxLength="50" />
+          <Property Name="CPERRAKR" Type="varchar" MaxLength="50" />
+          <Property Name="CPERRA1R" Type="varchar" MaxLength="50" />
+          <Property Name="CPERRA2R" Type="varchar" MaxLength="50" />
+          <Property Name="CPERRA3R" Type="varchar" MaxLength="50" />
+          <Property Name="CPERRA4R" Type="varchar" MaxLength="50" />
+          <Property Name="CPERRA5R" Type="varchar" MaxLength="50" />
+          <Property Name="CPERRA6R" Type="varchar" MaxLength="50" />
+          <Property Name="CPERRA7R" Type="varchar" MaxLength="50" />
+          <Property Name="CPERRA8R" Type="varchar" MaxLength="50" />
+          <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+        </EntityType>
+        <Association Name="FK_college_campusReference">
+          <End Role="campusReference" Type="Self.campusReference" Multiplicity="1" />
+          <End Role="college" Type="Self.college" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="campusReference">
+              <PropertyRef Name="CampusId" />
+            </Principal>
+            <Dependent Role="college">
+              <PropertyRef Name="CampusId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_noner_campusReference">
+          <End Role="campusReference" Type="Self.campusReference" Multiplicity="1" />
+          <End Role="noner" Type="Self.noner" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="campusReference">
+              <PropertyRef Name="CampusId" />
+            </Principal>
+            <Dependent Role="noner">
+              <PropertyRef Name="CampusId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_staff_campusReference">
+          <End Role="campusReference" Type="Self.campusReference" Multiplicity="1" />
+          <End Role="staff" Type="Self.staff" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="campusReference">
+              <PropertyRef Name="CampusId" />
+            </Principal>
+            <Dependent Role="staff">
+              <PropertyRef Name="CampusId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_student_campusReference">
+          <End Role="campusReference" Type="Self.campusReference" Multiplicity="1" />
+          <End Role="student" Type="Self.student" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="campusReference">
+              <PropertyRef Name="CampusId" />
+            </Principal>
+            <Dependent Role="student">
+              <PropertyRef Name="CampusId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="commit_fiveModelStoreContainer">
+          <EntitySet Name="campusReference" EntityType="Self.campusReference" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="college" EntityType="Self.college" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="mytable" EntityType="Self.mytable" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="noner" EntityType="Self.noner" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="staff" EntityType="Self.staff" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="student" EntityType="Self.student" Schema="dbo" store:Type="Tables" />
+          <AssociationSet Name="FK_college_campusReference" Association="Self.FK_college_campusReference">
+            <End Role="campusReference" EntitySet="campusReference" />
+            <End Role="college" EntitySet="college" />
+          </AssociationSet>
+          <AssociationSet Name="FK_noner_campusReference" Association="Self.FK_noner_campusReference">
+            <End Role="campusReference" EntitySet="campusReference" />
+            <End Role="noner" EntitySet="noner" />
+          </AssociationSet>
+          <AssociationSet Name="FK_staff_campusReference" Association="Self.FK_staff_campusReference">
+            <End Role="campusReference" EntitySet="campusReference" />
+            <End Role="staff" EntitySet="staff" />
+          </AssociationSet>
+          <AssociationSet Name="FK_student_campusReference" Association="Self.FK_student_campusReference">
+            <End Role="campusReference" EntitySet="campusReference" />
+            <End Role="student" EntitySet="student" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="commit_fiveModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="campusReference">
+          <Key>
+            <PropertyRef Name="CampusId" />
+          </Key>
+          <Property Name="CampusId" Type="Int32" Nullable="false" />
+          <Property Name="CAMPUS" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="CAMPNAME" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="CNTYNAME" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="COUNTY" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="DISTNAME" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="GRDSPAN" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="GRDTYPE" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <NavigationProperty Name="college" Relationship="Self.FK_college_campusReference" FromRole="campusReference" ToRole="college" />
+          <NavigationProperty Name="noner" Relationship="Self.FK_noner_campusReference" FromRole="campusReference" ToRole="noner" />
+          <NavigationProperty Name="staff" Relationship="Self.FK_staff_campusReference" FromRole="campusReference" ToRole="staff" />
+          <NavigationProperty Name="student" Relationship="Self.FK_student_campusReference" FromRole="campusReference" ToRole="student" />
+        </EntityType>
+        <EntityType Name="college">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="CAMPUS" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="CampusId" Type="Int32" Nullable="false" />
+          <Property Name="YEAR" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="CB0CT" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="CB0CC" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="CB0CS" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="CB0CA" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="CA0CT" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="CA0CC" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="CA0CS" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="CA0CA" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="CH0CT" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="CH0CC" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="CH0CS" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="CH0CA" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="CW0CT" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="CW0CC" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="CW0CS" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="CW0CA" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="CM0CT" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="CM0CC" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="CM0CS" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="CM0CA" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="CF0CT" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="CF0CC" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="CF0CS" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="CF0CA" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <NavigationProperty Name="campusReference" Relationship="Self.FK_college_campusReference" FromRole="college" ToRole="campusReference" />
+        </EntityType>
+        <EntityType Name="mytable">
+          <Key>
+            <PropertyRef Name="CAMPUS" />
+          </Key>
+          <Property Name="CAMPUS" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="CAMPNAME" Type="String" MaxLength="34" FixedLength="false" Unicode="false" />
+          <Property Name="CNTYNAME" Type="String" MaxLength="13" FixedLength="false" Unicode="false" />
+          <Property Name="COUNTY" Type="String" MaxLength="4" FixedLength="false" Unicode="false" />
+          <Property Name="DISTNAME" Type="String" MaxLength="34" FixedLength="false" Unicode="false" />
+          <Property Name="GRDSPAN" Type="String" MaxLength="8" FixedLength="false" Unicode="false" />
+          <Property Name="GRDTYPE" Type="String" MaxLength="1" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityType Name="noner">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="CAMPUS" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="CampusId" Type="Int32" Nullable="false" />
+          <Property Name="YEAR" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="CB0AT" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="CA0AT" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="CW0AT" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="CH0AT" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="CE0AT" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="CL0AT" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="CM0AT" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="CF0AT" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <NavigationProperty Name="campusReference" Relationship="Self.FK_noner_campusReference" FromRole="noner" ToRole="campusReference" />
+        </EntityType>
+        <EntityType Name="staff">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="CAMPUS" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="CampusId" Type="Int32" Nullable="false" />
+          <Property Name="YEAR" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="CPST00FP" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="CPST01FP" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="CPST11FP" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="CPST06FP" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="CPST20FP" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <NavigationProperty Name="campusReference" Relationship="Self.FK_staff_campusReference" FromRole="staff" ToRole="campusReference" />
+        </EntityType>
+        <EntityType Name="student">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="CAMPUS" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="CampusId" Type="Int32" Nullable="false" />
+          <Property Name="YEAR" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="CPETHISP" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="CPETBLAP" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="CPETWHIP" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="CPETLEPP" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="CPETECOP" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="CPETALLC" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="CPERRAKR" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="CPERRA1R" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="CPERRA2R" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="CPERRA3R" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="CPERRA4R" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="CPERRA5R" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="CPERRA6R" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="CPERRA7R" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="CPERRA8R" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <NavigationProperty Name="campusReference" Relationship="Self.FK_student_campusReference" FromRole="student" ToRole="campusReference" />
+        </EntityType>
+        <Association Name="FK_college_campusReference">
+          <End Role="campusReference" Type="Self.campusReference" Multiplicity="1" />
+          <End Role="college" Type="Self.college" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="campusReference">
+              <PropertyRef Name="CampusId" />
+            </Principal>
+            <Dependent Role="college">
+              <PropertyRef Name="CampusId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_noner_campusReference">
+          <End Role="campusReference" Type="Self.campusReference" Multiplicity="1" />
+          <End Role="noner" Type="Self.noner" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="campusReference">
+              <PropertyRef Name="CampusId" />
+            </Principal>
+            <Dependent Role="noner">
+              <PropertyRef Name="CampusId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_staff_campusReference">
+          <End Role="campusReference" Type="Self.campusReference" Multiplicity="1" />
+          <End Role="staff" Type="Self.staff" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="campusReference">
+              <PropertyRef Name="CampusId" />
+            </Principal>
+            <Dependent Role="staff">
+              <PropertyRef Name="CampusId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_student_campusReference">
+          <End Role="campusReference" Type="Self.campusReference" Multiplicity="1" />
+          <End Role="student" Type="Self.student" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="campusReference">
+              <PropertyRef Name="CampusId" />
+            </Principal>
+            <Dependent Role="student">
+              <PropertyRef Name="CampusId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="CommitFiveEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="campusReference" EntityType="Self.campusReference" />
+          <EntitySet Name="college" EntityType="Self.college" />
+          <EntitySet Name="mytable" EntityType="Self.mytable" />
+          <EntitySet Name="noner" EntityType="Self.noner" />
+          <EntitySet Name="staff" EntityType="Self.staff" />
+          <EntitySet Name="student" EntityType="Self.student" />
+          <AssociationSet Name="FK_college_campusReference" Association="Self.FK_college_campusReference">
+            <End Role="campusReference" EntitySet="campusReference" />
+            <End Role="college" EntitySet="college" />
+          </AssociationSet>
+          <AssociationSet Name="FK_noner_campusReference" Association="Self.FK_noner_campusReference">
+            <End Role="campusReference" EntitySet="campusReference" />
+            <End Role="noner" EntitySet="noner" />
+          </AssociationSet>
+          <AssociationSet Name="FK_staff_campusReference" Association="Self.FK_staff_campusReference">
+            <End Role="campusReference" EntitySet="campusReference" />
+            <End Role="staff" EntitySet="staff" />
+          </AssociationSet>
+          <AssociationSet Name="FK_student_campusReference" Association="Self.FK_student_campusReference">
+            <End Role="campusReference" EntitySet="campusReference" />
+            <End Role="student" EntitySet="student" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="commit_fiveModelStoreContainer" CdmEntityContainer="CommitFiveEntities">
+          <EntitySetMapping Name="campusReference">
+            <EntityTypeMapping TypeName="commit_fiveModel.campusReference">
+              <MappingFragment StoreEntitySet="campusReference">
+                <ScalarProperty Name="CampusId" ColumnName="CampusId" />
+                <ScalarProperty Name="CAMPUS" ColumnName="CAMPUS" />
+                <ScalarProperty Name="CAMPNAME" ColumnName="CAMPNAME" />
+                <ScalarProperty Name="CNTYNAME" ColumnName="CNTYNAME" />
+                <ScalarProperty Name="COUNTY" ColumnName="COUNTY" />
+                <ScalarProperty Name="DISTNAME" ColumnName="DISTNAME" />
+                <ScalarProperty Name="GRDSPAN" ColumnName="GRDSPAN" />
+                <ScalarProperty Name="GRDTYPE" ColumnName="GRDTYPE" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="college">
+            <EntityTypeMapping TypeName="commit_fiveModel.college">
+              <MappingFragment StoreEntitySet="college">
+                <ScalarProperty Name="CAMPUS" ColumnName="CAMPUS" />
+                <ScalarProperty Name="CampusId" ColumnName="CampusId" />
+                <ScalarProperty Name="YEAR" ColumnName="YEAR" />
+                <ScalarProperty Name="CB0CT" ColumnName="CB0CT" />
+                <ScalarProperty Name="CB0CC" ColumnName="CB0CC" />
+                <ScalarProperty Name="CB0CS" ColumnName="CB0CS" />
+                <ScalarProperty Name="CB0CA" ColumnName="CB0CA" />
+                <ScalarProperty Name="CA0CT" ColumnName="CA0CT" />
+                <ScalarProperty Name="CA0CC" ColumnName="CA0CC" />
+                <ScalarProperty Name="CA0CS" ColumnName="CA0CS" />
+                <ScalarProperty Name="CA0CA" ColumnName="CA0CA" />
+                <ScalarProperty Name="CH0CT" ColumnName="CH0CT" />
+                <ScalarProperty Name="CH0CC" ColumnName="CH0CC" />
+                <ScalarProperty Name="CH0CS" ColumnName="CH0CS" />
+                <ScalarProperty Name="CH0CA" ColumnName="CH0CA" />
+                <ScalarProperty Name="CW0CT" ColumnName="CW0CT" />
+                <ScalarProperty Name="CW0CC" ColumnName="CW0CC" />
+                <ScalarProperty Name="CW0CS" ColumnName="CW0CS" />
+                <ScalarProperty Name="CW0CA" ColumnName="CW0CA" />
+                <ScalarProperty Name="CM0CT" ColumnName="CM0CT" />
+                <ScalarProperty Name="CM0CC" ColumnName="CM0CC" />
+                <ScalarProperty Name="CM0CS" ColumnName="CM0CS" />
+                <ScalarProperty Name="CM0CA" ColumnName="CM0CA" />
+                <ScalarProperty Name="CF0CT" ColumnName="CF0CT" />
+                <ScalarProperty Name="CF0CC" ColumnName="CF0CC" />
+                <ScalarProperty Name="CF0CS" ColumnName="CF0CS" />
+                <ScalarProperty Name="CF0CA" ColumnName="CF0CA" />
+                <ScalarProperty Name="id" ColumnName="id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="mytable">
+            <EntityTypeMapping TypeName="commit_fiveModel.mytable">
+              <MappingFragment StoreEntitySet="mytable">
+                <ScalarProperty Name="CAMPUS" ColumnName="CAMPUS" />
+                <ScalarProperty Name="CAMPNAME" ColumnName="CAMPNAME" />
+                <ScalarProperty Name="CNTYNAME" ColumnName="CNTYNAME" />
+                <ScalarProperty Name="COUNTY" ColumnName="COUNTY" />
+                <ScalarProperty Name="DISTNAME" ColumnName="DISTNAME" />
+                <ScalarProperty Name="GRDSPAN" ColumnName="GRDSPAN" />
+                <ScalarProperty Name="GRDTYPE" ColumnName="GRDTYPE" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="noner">
+            <EntityTypeMapping TypeName="commit_fiveModel.noner">
+              <MappingFragment StoreEntitySet="noner">
+                <ScalarProperty Name="CAMPUS" ColumnName="CAMPUS" />
+                <ScalarProperty Name="CampusId" ColumnName="CampusId" />
+                <ScalarProperty Name="YEAR" ColumnName="YEAR" />
+                <ScalarProperty Name="CB0AT" ColumnName="CB0AT" />
+                <ScalarProperty Name="CA0AT" ColumnName="CA0AT" />
+                <ScalarProperty Name="CW0AT" ColumnName="CW0AT" />
+                <ScalarProperty Name="CH0AT" ColumnName="CH0AT" />
+                <ScalarProperty Name="CE0AT" ColumnName="CE0AT" />
+                <ScalarProperty Name="CL0AT" ColumnName="CL0AT" />
+                <ScalarProperty Name="CM0AT" ColumnName="CM0AT" />
+                <ScalarProperty Name="CF0AT" ColumnName="CF0AT" />
+                <ScalarProperty Name="id" ColumnName="id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="staff">
+            <EntityTypeMapping TypeName="commit_fiveModel.staff">
+              <MappingFragment StoreEntitySet="staff">
+                <ScalarProperty Name="CAMPUS" ColumnName="CAMPUS" />
+                <ScalarProperty Name="CampusId" ColumnName="CampusId" />
+                <ScalarProperty Name="YEAR" ColumnName="YEAR" />
+                <ScalarProperty Name="CPST00FP" ColumnName="CPST00FP" />
+                <ScalarProperty Name="CPST01FP" ColumnName="CPST01FP" />
+                <ScalarProperty Name="CPST11FP" ColumnName="CPST11FP" />
+                <ScalarProperty Name="CPST06FP" ColumnName="CPST06FP" />
+                <ScalarProperty Name="CPST20FP" ColumnName="CPST20FP" />
+                <ScalarProperty Name="id" ColumnName="id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="student">
+            <EntityTypeMapping TypeName="commit_fiveModel.student">
+              <MappingFragment StoreEntitySet="student">
+                <ScalarProperty Name="CAMPUS" ColumnName="CAMPUS" />
+                <ScalarProperty Name="CampusId" ColumnName="CampusId" />
+                <ScalarProperty Name="YEAR" ColumnName="YEAR" />
+                <ScalarProperty Name="CPETHISP" ColumnName="CPETHISP" />
+                <ScalarProperty Name="CPETBLAP" ColumnName="CPETBLAP" />
+                <ScalarProperty Name="CPETWHIP" ColumnName="CPETWHIP" />
+                <ScalarProperty Name="CPETLEPP" ColumnName="CPETLEPP" />
+                <ScalarProperty Name="CPETECOP" ColumnName="CPETECOP" />
+                <ScalarProperty Name="CPETALLC" ColumnName="CPETALLC" />
+                <ScalarProperty Name="CPERRAKR" ColumnName="CPERRAKR" />
+                <ScalarProperty Name="CPERRA1R" ColumnName="CPERRA1R" />
+                <ScalarProperty Name="CPERRA2R" ColumnName="CPERRA2R" />
+                <ScalarProperty Name="CPERRA3R" ColumnName="CPERRA3R" />
+                <ScalarProperty Name="CPERRA4R" ColumnName="CPERRA4R" />
+                <ScalarProperty Name="CPERRA5R" ColumnName="CPERRA5R" />
+                <ScalarProperty Name="CPERRA6R" ColumnName="CPERRA6R" />
+                <ScalarProperty Name="CPERRA7R" ColumnName="CPERRA7R" />
+                <ScalarProperty Name="CPERRA8R" ColumnName="CPERRA8R" />
+                <ScalarProperty Name="id" ColumnName="id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="false" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

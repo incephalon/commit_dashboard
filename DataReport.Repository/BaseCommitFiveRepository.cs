@@ -1,23 +1,18 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Linq;
 using System.Net;
-using System.Text;
-using System.Threading.Tasks;
 using DataReport.Common;
 using DataReport.Interfaces.Interfaces;
 using DataReport.Model;
-using System.Data.Entity;
-using System.Data;
 
 namespace DataReport.Repository
 {
-    public class BaseRepository
+    public class BaseCommitFiveRepository
     {
-        private IReportContext _context;
+        private ICommitFiveContext _context;
         private IResponseMessage _response;
 
-        public IReportContext Context
+        public ICommitFiveContext Context
         {
             get
             {
@@ -25,17 +20,17 @@ namespace DataReport.Repository
             }
         }
 
-        public BaseRepository(IReportContext context)
+        public BaseCommitFiveRepository(ICommitFiveContext context)
         {
             this._context = context;
         }
 
-        public BaseRepository(IReportContext context, IResponseMessage response)
+        public BaseCommitFiveRepository(ICommitFiveContext context, IResponseMessage response)
         {
             this._context = context;
             _response = response;
         }
-        public BaseRepository()
+        public BaseCommitFiveRepository()
         {
 
         }
