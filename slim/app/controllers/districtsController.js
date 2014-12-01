@@ -7,6 +7,12 @@
     $scope.schools = [];
 
 
-
+    $.ajax({
+        url: '/api/StaarSimple',
+        success: function (data) {
+            console.log("data");
+            console.log(data);
+        }
+    });
 
 });

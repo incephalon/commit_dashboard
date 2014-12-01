@@ -122,7 +122,9 @@
   <ItemGroup>
     <Content Include="app\app.js" />
     <Content Include="app\controllers\districtsController.js" />
+    <Content Include="app\controllers\donorsController.js" />
     <Content Include="app\controllers\schoolsController.js" />
+    <Content Include="app\controllers\scorecardController.js" />
     <Content Include="app\directive\app_localization.js" />
     <Content Include="app\directive\directive.js" />
     <Content Include="app\i18n\resources-locale_de.js" />
@@ -138,11 +140,13 @@
     <Content Include="app\templates\pages\boxes.html" />
     <Content Include="app\templates\pages\components.html" />
     <Content Include="app\templates\pages\districts_dashboard.html" />
+    <Content Include="app\templates\pages\donors.html" />
     <Content Include="app\templates\pages\schools_dashboard.html" />
     <Content Include="app\templates\header.html" />
     <Content Include="app\templates\nav.html" />
     <Content Include="app\templates\home.html" />
     <Content Include="app\templates\back_nav.html" />
+    <Content Include="app\templates\pages\scorecard.html" />
     <Content Include="app\templates\pages\tab.html" />
     <Content Include="app\templates\pages\type.html" />
     <Content Include="app\templates\pages\visuals.html" />
@@ -547,8 +551,27 @@
     <Content Include="images\bg-pattern\bg-pattern8.png" />
     <Content Include="images\bg-pattern\bg-pattern9.png" />
     <Content Include="images\g1.jpg" />
+    <Content Include="LICENSE.txt" />
+    <Content Include="old_app.txt" />
     <Content Include="old_dash.txt" />
     <Content Include="old_nav.txt" />
+    <Content Include="scorecard_assets\page_1.svg" />
+    <Content Include="scorecard_assets\page_10.svg" />
+    <Content Include="scorecard_assets\page_11.svg" />
+    <Content Include="scorecard_assets\page_12.svg" />
+    <Content Include="scorecard_assets\page_13.svg" />
+    <Content Include="scorecard_assets\page_14.svg" />
+    <Content Include="scorecard_assets\page_18.svg" />
+    <Content Include="scorecard_assets\page_19.svg" />
+    <Content Include="scorecard_assets\page_2.svg" />
+    <Content Include="scorecard_assets\page_20.svg" />
+    <Content Include="scorecard_assets\page_21.svg" />
+    <Content Include="scorecard_assets\page_22.svg" />
+    <Content Include="scorecard_assets\page_3.svg" />
+    <Content Include="scorecard_assets\page_5.svg" />
+    <Content Include="scorecard_assets\page_6.svg" />
+    <Content Include="scorecard_assets\page_8.svg" />
+    <Content Include="scorecard_assets\page_9.svg" />
     <Content Include="Scripts\angular-animate.js" />
     <Content Include="Scripts\angular-animate.min.js" />
     <Content Include="Scripts\angular-aria.js" />
@@ -575,6 +598,8 @@
     <Content Include="Scripts\angular.min.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
+    <Content Include="Scripts\d3.js" />
+    <Content Include="Scripts\d3.min.js" />
     <Content Include="Scripts\i18n\angular-locale_aa-dj.js" />
     <Content Include="Scripts\i18n\angular-locale_aa-er.js" />
     <Content Include="Scripts\i18n\angular-locale_aa-et.js" />
@@ -2156,6 +2181,7 @@
     <Compile Include="Controllers\BaseController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\sqlController.cs" />
+    <Compile Include="Controllers\StaarSimpleController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
