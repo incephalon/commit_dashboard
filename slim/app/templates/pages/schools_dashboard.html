@@ -4,7 +4,12 @@
        
         <!--<input style="width:400px" kendo-auto-complete ng-model="selectedSchool" k-data-source="schools" placeholder=" Search Campuses..." />-->
         <!--<input style="width:100%" kendo-auto-complete ng-model="country" k-options="FruitAutoCompleteFromFactory" placeholder="  Search Campuses..." />-->
-        <select ng-change="campusChange()" style="width:100%" ng-model="selectedSchool" ng-options="c.CAMPNAME for c in schools"></select>
+        <!--<select ng-change="campusChange()" style="width:100%" ng-model="selectedSchool" ng-options="c.CAMPNAME for c in schools"></select>-->
+        <input kendo-auto-complete ng-model="selectedSchoolValue"
+               k-data-source="schools" style="width: 100%"
+
+               k-data-text-field="'CAMPNAME'"
+               on-change="campusChange()" />
     </div>  
 
 
@@ -39,7 +44,7 @@
                 </span>
                 <div class="box-info">
                     <p class="size-h2">{{selectedSchool["CPETECOP"]}}<span class="size-h4">%</span></p>
-                    <p class="text-muted"><span>Economically Disadvantaged</span></p>
+                    <p class="text-muted"><span>Econ Dis %</span></p>
                 </div>
             </div>
         </div>

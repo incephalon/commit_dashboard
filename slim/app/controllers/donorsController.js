@@ -13,6 +13,44 @@
         'dallas isd': '105:9'
     };
 
+
+    $scope.projects = [];
+
+    function createGrid() {
+
+        $("#donorsGrid").kendoGrid({
+            dataSource: {
+                data: $scope.projects,
+                schema: {
+                    model: {
+                        fields: {
+                            schoolName: { type: "string" },
+                            title: { type: "string" },
+                            costToComplete: { type: "number" },
+                            city: { type: "string" }
+                        }
+                    }
+                }
+                //pageSize: 20
+            },
+            //height: 550,
+            scrollable: true,
+            sortable: true,
+            filterable: true,
+            pageable: {
+                input: true,
+                numeric: false
+            },
+            columns: [
+                { field: "schoolName", title:"School", width: "130px" },
+                { field: "title", title: "Title", format: "{0:c}", width: "250px" },
+                { field: "costToComplete", title: "Cost to Complete", width: "130px" },
+                { field: "city", title:"City",  width: "130px" }
+            ]
+        });
+    }
+
+
     $scope.init = function () {
         console.log("init here");
 
@@ -21,35 +59,43 @@
             dataType: 'jsonp',
             success: function (results) {
 
+                $scope.projects = results.proposals;
+                console.log("proposals");
+                console.log(results.proposals);
+                createGrid();
+
                 $scope.$apply(function () {
-                    $scope.numberOfProjects = results.proposals.length;
+                    //$scope.numberOfProjects = results.proposals.length;
 
-                    var allCosts = _.pluck(results.proposals, "costToComplete");
-                    var sum = _.reduce(allCosts, function (memo, num) { return memo + parseFloat(num); }, 0);
-                    $scope.amountNeeded = sum;
-                    console.log("sum");
-                    console.log(sum);
+                    //var allCosts = _.pluck(results.proposals, "costToComplete");
+                    //var sum = _.reduce(allCosts, function (memo, num) { return memo + parseFloat(num); }, 0);
+                    //$scope.amountNeeded = sum;
+                    //console.log("sum");
+                    //console.log(sum);
 
-                    var allDistricts = _.pluck(results.proposals, "city");
-                    var distinctDistricts = _.uniq(allDistricts);
+                    //var allDistricts = _.pluck(results.proposals, "city");
+                    //var distinctDistricts = _.uniq(allDistricts);
 
-                    $scope.NuDistricts = distinctDistricts.length;
+                    //$scope.NuDistricts = distinctDistricts.length;
 
-                    var allSchools = _.pluck(results.proposals, "schoolName");
-                    var distinctSchools = _.uniq(allSchools);
+                    //var allSchools = _.pluck(results.proposals, "schoolName");
+                    //var distinctSchools = _.uniq(allSchools);
 
-                    $scope.NuSchools = distinctSchools.length;
+                    //$scope.NuSchools = distinctSchools.length;
 
-                    $scope.projects = results.proposals;
-                    console.log("projects scope");
-                    console.log($scope.projects);
+                    //$scope.projects = results.proposals;
+                    //console.log("projects scope");
+                    //console.log($scope.projects);
 
-                    $scope.create(results.proposals);
+                    //$scope.create(results.proposals);
+
+                    //$scope.projects = results;
+                    //createGrid();
 
                 });
 
                 //console.log(results.proposals.length);
-                console.log(results);
+                //console.log(results);
                 //			console.log(results['proposals'][0]['percentFunded']);
                 //			console.log(results['proposals'][0]['costToComplete']);
             }

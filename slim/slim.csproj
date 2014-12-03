@@ -71,6 +71,7 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\packages\Microsoft.AspNet.WebApi.Client.5.2.2\lib\net45\System.Net.Http.Formatting.dll</HintPath>
     </Reference>
+    <Reference Include="System.Runtime.Serialization" />
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
     <Reference Include="System.Web.ApplicationServices" />
@@ -123,8 +124,10 @@
     <Content Include="app\app.js" />
     <Content Include="app\controllers\districtsController.js" />
     <Content Include="app\controllers\donorsController.js" />
+    <Content Include="app\controllers\mappingController.js" />
     <Content Include="app\controllers\schoolsController.js" />
     <Content Include="app\controllers\scorecardController.js" />
+    <Content Include="app\controllers\staarController.js" />
     <Content Include="app\directive\app_localization.js" />
     <Content Include="app\directive\directive.js" />
     <Content Include="app\i18n\resources-locale_de.js" />
@@ -137,16 +140,19 @@
     <Content Include="app\i18n\resources-locale_pt.js" />
     <Content Include="app\i18n\resources-locale_ru.js" />
     <Content Include="app\i18n\resources-locale_zh.js" />
+    <Content Include="app\services\donorsData.js" />
+    <Content Include="app\services\sqlData.js" />
     <Content Include="app\templates\pages\boxes.html" />
     <Content Include="app\templates\pages\components.html" />
     <Content Include="app\templates\pages\districts_dashboard.html" />
     <Content Include="app\templates\pages\donors.html" />
+    <Content Include="app\templates\pages\mapping.html" />
     <Content Include="app\templates\pages\schools_dashboard.html" />
     <Content Include="app\templates\header.html" />
     <Content Include="app\templates\nav.html" />
     <Content Include="app\templates\home.html" />
-    <Content Include="app\templates\back_nav.html" />
     <Content Include="app\templates\pages\scorecard.html" />
+    <Content Include="app\templates\pages\staar.html" />
     <Content Include="app\templates\pages\tab.html" />
     <Content Include="app\templates\pages\type.html" />
     <Content Include="app\templates\pages\visuals.html" />
@@ -553,6 +559,7 @@
     <Content Include="images\g1.jpg" />
     <Content Include="LICENSE.txt" />
     <Content Include="old_app.txt" />
+    <Content Include="old_back_nav.txt" />
     <Content Include="old_dash.txt" />
     <Content Include="old_nav.txt" />
     <Content Include="scorecard_assets\page_1.svg" />
@@ -2179,6 +2186,7 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Compile Include="Controllers\BaseController.cs" />
+    <Compile Include="Controllers\downloadController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\sqlController.cs" />
     <Compile Include="Controllers\StaarSimpleController.cs" />
@@ -2218,9 +2226,10 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="app\services\" />
     <Folder Include="App_Data\" />
+    <Folder Include="DownloadFile\" />
     <Folder Include="Models\" />
+    <Folder Include="Views\download\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
