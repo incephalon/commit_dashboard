@@ -7,6 +7,10 @@
     $scope.NuDistricts = 100;
     $scope.projects;
 
+    //PAGE LOADER.
+    $scope.spinner = false;
+
+
     var districtNumbers = {
         'Dallas County': '331:1',
         'mesquite isd': '1440:2',
@@ -52,6 +56,7 @@
 
 
     $scope.init = function () {
+        $scope.spinner = true;
         console.log("init here");
 
         $.ajax({
@@ -91,7 +96,7 @@
 
                     //$scope.projects = results;
                     //createGrid();
-
+                    $scope.spinner = false;
                 });
 
                 //console.log(results.proposals.length);
@@ -102,7 +107,7 @@
         });
 
 
-
+        $scope.spinner = true;
         $.ajax({
             url: "http://api.donorschoose.org/common/json_feed.html?state=TX&Community=331:1&APIKey=vmspm5ygamje&max=50",
             dataType: 'jsonp',
@@ -122,7 +127,7 @@
                 console.log(percenter);
 
                 $scope.create(results);
-
+                $scope.spinner = false;
             }
         });
 
