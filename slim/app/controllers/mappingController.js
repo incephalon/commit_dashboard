@@ -24,7 +24,7 @@
     //====
     var styler = [{ "featureType": "all", "stylers": [{ "saturation": 0 }, { "hue": "#e7ecf0" }] }, { "featureType": "road", "stylers": [{ "saturation": -70 }] }, { "featureType": "transit", "stylers": [{ "visibility": "off" }] }, { "featureType": "poi", "stylers": [{ "visibility": "off" }] }, { "featureType": "water", "stylers": [{ "visibility": "simplified" }, { "saturation": -60 }] }];
     $("#map-canvas").width($(document).width());
-    $("#map-canvas").height($(document).height());
+    $("#map-canvas").height($(window).height());
 
         var mapOptions = {
             //32.775595, -96.808998

@@ -10,28 +10,25 @@
     //PAGE LOADER.
     $scope.spinner = false;
 
-
     var districtNumbers = {
         'Dallas County': '331:1',
         'mesquite isd': '1440:2',
         'dallas isd': '105:9'
     };
 
-    //border:2px solid orange;
-    $(".angular-google-map-container").height(548);
-    $(".angular-google-map-container").css('border', '2px solid orange');
-
-
     var styler = [{ "featureType": "all", "stylers": [{ "saturation": 0 }, { "hue": "#e7ecf0" }] }, { "featureType": "road", "stylers": [{ "saturation": -70 }] }, { "featureType": "transit", "stylers": [{ "visibility": "off" }] }, { "featureType": "poi", "stylers": [{ "visibility": "off" }] }, { "featureType": "water", "stylers": [{ "visibility": "simplified" }, { "saturation": -60 }] }];
-    $scope.map = {
-        center: {
-            latitude: 32.833992,
-            longitude: -96.791640
-        },
+    $("#map-canvas-dc").height(548);
+    $("#map-canvas-dc").css('border', '2px solid orange');
+
+    var mapOptions = {
+        center: new google.maps.LatLng(32.795903, -96.795903),
         zoom: 10,
         mapTypeId: google.maps.MapTypeId.ROADMAP,
+        disableDefaultUI: true,
         styles: styler
     };
+
+    var map = new google.maps.Map(document.getElementById('map-canvas-dc'), mapOptions);
 
     $scope.projects = [];
 
@@ -69,7 +66,6 @@
         });
     }
 
-
     $scope.init = function () {
         $scope.spinner = true;
         console.log("init here");
@@ -85,23 +81,37 @@
                 createGrid();
 
                 $scope.$apply(function () {
-                    //$scope.numberOfProjects = results.proposals.length;
+                    $scope.numberOfProjects = results.proposals.length;
 
-                    //var allCosts = _.pluck(results.proposals, "costToComplete");
-                    //var sum = _.reduce(allCosts, function (memo, num) { return memo + parseFloat(num); }, 0);
-                    //$scope.amountNeeded = sum;
+                    var allCosts = _.pluck(results.proposals, "costToComplete");
+                    var sum = _.reduce(allCosts, function (memo, num) { return memo + parseFloat(num); }, 0);
+                    $scope.amountNeeded = sum;
                     //console.log("sum");
                     //console.log(sum);
 
-                    //var allDistricts = _.pluck(results.proposals, "city");
-                    //var distinctDistricts = _.uniq(allDistricts);
+                    var allDistricts = _.pluck(results.proposals, "city");
+                    var distinctDistricts = _.uniq(allDistricts);
 
-                    //$scope.NuDistricts = distinctDistricts.length;
+                    $scope.NuDistricts = distinctDistricts.length;
 
-                    //var allSchools = _.pluck(results.proposals, "schoolName");
-                    //var distinctSchools = _.uniq(allSchools);
+                    var allSchools = _.pluck(results.proposals, "schoolName");
+                    var distinctSchools = _.uniq(allSchools);
 
-                    //$scope.NuSchools = distinctSchools.length;
+                    $scope.NuSchools = distinctSchools.length;
+                    $scope.spinner = false;
+                    for (var i = 0; i < results.proposals.length; i++) {
+
+                        var lat = results.proposals[i].latitude;
+                        var long = results.proposals[i].longitude;
+
+                        var myLatlng = new google.maps.LatLng(parseFloat(lat), parseFloat(long));
+
+                        var marker = new google.maps.Marker({
+                            position: myLatlng,
+                            map: map,
+                            icon:'../images/orange1.png'
+                        });
+                    }
 
                     //$scope.projects = results.proposals;
                     //console.log("projects scope");
@@ -111,7 +121,7 @@
 
                     //$scope.projects = results;
                     //createGrid();
-                    $scope.spinner = false;
+                    //$scope.spinner = false;
                 });
 
                 //console.log(results.proposals.length);

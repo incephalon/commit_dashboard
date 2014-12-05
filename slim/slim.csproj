@@ -558,7 +558,10 @@
     <Content Include="images\bg-pattern\bg-pattern8.png" />
     <Content Include="images\bg-pattern\bg-pattern9.png" />
     <Content Include="images\commit_logo.png" />
+    <Content Include="images\dc.png" />
     <Content Include="images\g1.jpg" />
+    <Content Include="images\orange.png" />
+    <Content Include="images\orange1.png" />
     <Content Include="LICENSE.txt" />
     <Content Include="old_app.txt" />
     <Content Include="old_back_nav.txt" />
@@ -2060,6 +2063,7 @@
     <Content Include="_KendoThree\styles\Uniform\sprite.png" />
     <Content Include="_KendoThree\styles\Uniform\sprite_2x.png" />
     <Content Include="app\map_data\DallasCountyCensusTracts.json" />
+    <None Include="Properties\PublishProfiles\datacommit.pubxml" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />

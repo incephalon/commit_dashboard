@@ -108,9 +108,9 @@ angular.module('myApp.directives', [])
                 var $parent, $this;
                 return $app.hasClass("nav-collapsed-min") || $nav.hasClass("nav-horizontal") && $window.width() >= 768 ? !1 : ($this = $(this), $parent = $this.parent("li"), $lists.not($parent).removeClass("open").find("ul").slideUp(), $parent.toggleClass("open").find("ul").stop().slideToggle(), event.preventDefault())
             }), $aRest.on("click", function () {
-                return $lists.removeClass("open").find("ul").slideUp()
+                return $lists.removeClass("open").find("ul").slideUp(5000)
             }), scope.$on("nav:reset", function () {
-                return $lists.removeClass("open").find("ul").slideUp()
+                return $lists.removeClass("open").find("ul").slideUp(5000)
             }), Timer = void 0, prevWidth = $window.width(), updateClass = function () {
                 var currentWidth;
                 return currentWidth = $window.width(), 768 > currentWidth && $app.removeClass("nav-collapsed-min"), 768 > prevWidth && currentWidth >= 768 && $nav.hasClass("nav-horizontal") && $lists.removeClass("open").find("ul").slideUp(), prevWidth = currentWidth
