@@ -25,9 +25,10 @@
     <script src="~/Scripts/angular.js"></script>
     <script src="~/Scripts/angular-route.js"></script>
     <script src="~/Scripts/angular-animate.js"></script>
+    <script src="~/Scripts/ui.js"></script>
     <script src="~/app/app.js"></script>
     <script src="~/app/directive/app_localization.js"></script>
-    <script src="~/Scripts/ui.js"></script>
+    
     <script src="~/app/directive/directive.js"></script>
 
 
@@ -46,15 +47,13 @@
     <script src="~/app/services/sqlData.js"></script>
     <script src="~/app/services/d3Data.js"></script>
 
-
-
     <script src="~/Scripts/lodash.min.js"></script>
 
     <link href="~/_KendoThree/styles/kendo.default.min.css" rel="stylesheet" />
     <link href="~/_KendoThree/styles/kendo.common.min.css" rel="stylesheet" />
     <script src="~/_KendoThree/js/kendo.all.min.js"></script>
     <script src="~/Scripts/d3.min.js"></script>
-
+   
     <!-- end Needs images -->
 
     <link href="/Content/main.css" rel="stylesheet" />
@@ -71,9 +70,27 @@
             padding: 5px 0;
         }
     </style>
+    <style type="text/css">
+       
+        [ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak, .ng-hide {
+            display: none !important;
+        }
 
+        ng\:form {
+            display: block;
+        }
+
+        .ng-animate-block-transitions {
+            transition: 0s all !important;
+            -webkit-transition: 0s all !important;
+        }
+
+        .ng-hide-add-active, .ng-hide-remove {
+            display: block !important;
+        }
+    </style>
 </head>
-<body data-custom-page data-off-canvas-nav data-ng-controller="slimParentController" data-ng-class="{'layout-boxed': admin.layout === 'boxed'} " class="app">
+<body data-custom-page data-off-canvas-nav data-ng-controller="slimParentController" data-ng-class="{'layout-boxed': admin.layout === 'boxed'} " class="app" id="app">
     <section data-ng-include=" '/app/templates/header.html' " id="header" class="header-container" data-ng-controller="HeaderCtrl" data-ng-class="{ 'header-fixed': admin.fixedHeader,
                                   'bg-white': ['11','12','13','14','15','16','21'].indexOf(admin.skin) >= 0,
                                   'bg-dark': admin.skin === '31',
@@ -91,21 +108,16 @@
                                     'bg-dark': ['31','32','33','34','35','36'].indexOf(admin.skin) < 0
                    }"></aside>
 
-     @RenderBody()
+        @RenderBody()
 
     </div>
-
-
-
-
-
 
 
     <script src="~/Scripts/bootstrap.min.js"></script>
 
     @*<script src="scripts/separate/app_localization.js"></script>
-    <script src="scripts/separate/app_controllers.js"></script>
-    <script src="scripts/separate/app_task.js"></script>
-    <script src="scripts/ui.js"></script>*@
+        <script src="scripts/separate/app_controllers.js"></script>
+        <script src="scripts/separate/app_task.js"></script>
+        <script src="scripts/ui.js"></script>*@
 </body>
 </html>
